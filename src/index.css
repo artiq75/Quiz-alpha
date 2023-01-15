@@ -1,0 +1,8 @@
+.timer {
+  text-align: center;
+}
+
+.is-valid {
+  padding: 1px;
+  background: greenyellow;
+}

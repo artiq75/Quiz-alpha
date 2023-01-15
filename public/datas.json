@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "title": "Première question",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Réponse 1",
+        "is_valid": false
+      },
+      {
+        "id": 2,
+        "title": "Réponse 2",
+        "is_valid": false
+      },
+      {
+        "id": 3,
+        "title": "Réponse 3",
+        "is_valid": false
+      },
+      {
+        "id": 4,
+        "title": "Réponse 4",
+        "is_valid": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Première question",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Réponse 1",
+        "is_valid": false
+      },
+      {
+        "id": 2,
+        "title": "Réponse 2",
+        "is_valid": false
+      },
+      {
+        "id": 3,
+        "title": "Réponse 3",
+        "is_valid": false
+      },
+      {
+        "id": 4,
+        "title": "Réponse 4",
+        "is_valid": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Première question",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Réponse 1",
+        "is_valid": false
+      },
+      {
+        "id": 2,
+        "title": "Réponse 2",
+        "is_valid": false
+      },
+      {
+        "id": 3,
+        "title": "Réponse 3",
+        "is_valid": false
+      },
+      {
+        "id": 4,
+        "title": "Réponse 4",
+        "is_valid": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Première question",
+    "answers": [
+      {
+        "id": 1,
+        "title": "Réponse 1",
+        "is_valid": false
+      },
+      {
+        "id": 2,
+        "title": "Réponse 2",
+        "is_valid": false
+      },
+      {
+        "id": 3,
+        "title": "Réponse 3",
+        "is_valid": false
+      },
+      {
+        "id": 4,
+        "title": "Réponse 4",
+        "is_valid": true
+      }
+    ]
+  }
+]
