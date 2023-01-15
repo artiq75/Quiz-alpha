@@ -32,7 +32,7 @@
       {
         "id": 1,
         "title": "Réponse 1",
-        "is_valid": false
+        "is_valid": true
       },
       {
         "id": 2,
@@ -47,7 +47,7 @@
       {
         "id": 4,
         "title": "Réponse 4",
-        "is_valid": true
+        "is_valid": false
       }
     ]
   },
@@ -63,7 +63,7 @@
       {
         "id": 2,
         "title": "Réponse 2",
-        "is_valid": false
+        "is_valid": true
       },
       {
         "id": 3,
@@ -73,7 +73,7 @@
       {
         "id": 4,
         "title": "Réponse 4",
-        "is_valid": true
+        "is_valid": false
       }
     ]
   },
@@ -94,12 +94,12 @@
       {
         "id": 3,
         "title": "Réponse 3",
-        "is_valid": false
+        "is_valid": true
       },
       {
         "id": 4,
         "title": "Réponse 4",
-        "is_valid": true
+        "is_valid": false
       }
     ]
   }

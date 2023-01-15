@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { QuestionItem } from './components/QuestionItem'
 import { useTimer } from './hooks/useTimer'
 
 const DURATION = 1000 * 3
@@ -7,6 +8,7 @@ export function App() {
   const [questions, setQuestions] = useState([])
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [isEndGame, setIsEndGame] = useState(false)
+
   const endTime = useRef(Date.now() + DURATION)
 
   const { timer: currentTime, stop: stopTimer } = useTimer()
@@ -53,42 +55,28 @@ export function App() {
         <>
           <p className="timer">Timer: {timer >= 0 ? timer : 0}</p>
 
-          {question && <Question question={question} isEndTimer={isEndTimer} />}
+          {question && (
+            <QuestionItem question={question} isEndTimer={isEndTimer} />
+          )}
 
           <br />
 
-          {(!isLastQuestion && isEndTimer) && (
-            <button onClick={handleNextQuestion}>prochaine question</button>
-          )}
+          {isEndTimer && (
+            <>
+              {!isLastQuestion && (
+                <button onClick={handleNextQuestion}>prochaine question</button>
+              )}
 
-          {isLastQuestion && isEndTimer && (
-            <button onClick={handleEndGame}>afficher les résultats</button>
+              {isLastQuestion && (
+                <button onClick={handleEndGame}>afficher les résultats</button>
+              )}
+            </>
           )}
         </>
       )}
 
       {isEndGame && <Results />}
     </div>
-  )
-}
-
-function Question({ question, isEndTimer }) {
-  return (
-    <fieldset>
-      <legend>
-        {question.title} {question.id}
-      </legend>
-      <ul>
-        {question.answers.map((answer) => (
-          <li
-            className={isEndTimer && answer.is_valid ? 'is-valid' : ''}
-            key={answer.id}
-          >
-            {answer.title}
-          </li>
-        ))}
-      </ul>
-    </fieldset>
   )
 }
 
